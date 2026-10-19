@@ -1,0 +1,25 @@
+[profiles.junior_engineer]
+name = "Junior Software Engineer"
+sources = ["Adzuna", "FAA", "ManchesterCC"]
+
+[profiles.junior_engineer.adzuna]
+what = "software engineer junior python"
+where = "Manchester"
+
+[profiles.junior_engineer.keywords]
+# Positive weights increase the final score
+boost = [
+    { word = "python", weight = 20 },
+    { word = "fastapi", weight = 15 },
+    { word = "django", weight = 15 },
+    { word = "sql", weight = 10 },
+    { word = "junior", weight = 25 },
+    { word = "apprentice", weight = 20 }
+]
+# Negative weights filter out false positives
+penalty = [
+    { word = "senior", weight = -50 },
+    { word = "lead", weight = -50 },
+    { word = "principal", weight = -50 },
+    { word = "security clearance", weight = -30 }
+]

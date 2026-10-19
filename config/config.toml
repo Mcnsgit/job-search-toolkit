@@ -1,0 +1,12 @@
+# GLOBA OPERATINAL SETTINGS
+max_per_source = 30
+min_score = 15
+max_workers = 5
+database_path = "seen_jobs.db"
+tracker_csv = "Job Tracker - Auto.csv"
+output_dir = "digests"
+
+# Remote Sync (optional)
+sync_remote = "gdrive:JobSearches"
+enable_sync = false
+ 
